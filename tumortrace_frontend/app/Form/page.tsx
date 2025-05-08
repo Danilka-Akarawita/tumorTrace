@@ -6,8 +6,7 @@ import { useState } from "react";
 import { z } from "zod";
 import { useEdgeStore } from "../lib/edgestore";
 import { Progress } from "@/components/ui/progress";
-import { useRouter } from "next/navigation"; // Import useRouter for redirection
-
+import { useRouter } from "next/navigation"; 
 // Zod schema for form validation
 const formSchema = z.object({
   name: z.string().min(1, { message: "Name is required" }),
